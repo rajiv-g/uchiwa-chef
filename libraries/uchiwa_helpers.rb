@@ -1,6 +1,6 @@
 module Uchiwa
   module Helpers
-
+    extend ChefVaultCookbook if Kernel.const_defined?("ChefVaultCookbook")
     def self.data_bag_item(data_bag_name, data_bag_item, missing_ok=false)
 
       raw_hash = Chef::DataBagItem.load(data_bag_name, data_bag_item)

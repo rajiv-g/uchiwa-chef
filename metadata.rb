@@ -8,7 +8,7 @@ version          '1.4.1'
 
 depends          'yum'
 depends          'apt'
-
+suggests "chef-vault", ">= 1.3.1"
 %w(
   ubuntu
   debian
